@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Lab - Fruit bar</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- font -->
+    <link rel="stylesheet" href="https://use.typekit.net/gdr5otk.css">
+    <!-- mio css -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+
+            <nav class="d-flex justify-content-between align-items-center" id="navigation">
+                <div class="d-sm-none" id="fakeDiv"></div>
+                <ul class="d-none d-sm-flex" id="navLeft">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#shop">SHOP</a></li>
+                </ul>
+
+                <div id="logo">
+                    <a href="#"><img src="img/logo.svg" alt=""></a>
+                </div>
+
+                <ul class="d-none d-sm-flex" id="navRight">
+                    <li><a href="#touch">INFO</a></li>
+                    <li><a href="#icone">CONTACT</a></li>
+                    <li><a href="#">CART</a></li>
+                </ul>
+                <div class="d-sm-none"><img src="img/hamburger-menu.svg" alt=""></div>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- hero -->
+        <section class="hero vh-100">
+            <div class="container h-100">
+                <div class="d-flex" id="contenitoreHero">
+                    <div class="titoli w-sm-50">
+                        <h1>EAT IT <br>
+                            LIKE THIS. <br>
+                            YOU'LL <br>
+                            SEE!</h1>
+
+                        <p class="d-none d-sm-block">Born from a love for fresh fruit and simple things done right, our
+                            <br> smoothie bar blends
+                            natural, seasonal ingredients into vibrant bowls <br> and smoothies made to refresh your
+                            body and
+                            brighten your day
+                        </p>
+                    </div>
+                    <div class="foto-hero w-50">
+                        <img src="img/img-hero.png" alt="">
+                    </div>
+                </div>
+                <div id="animazione" class="d-flex flex-column align-items-center text-center">
+                    <p>SCROLL TO <br>
+                        FIND OUT MORE</p>
+                    <img src="img/freccia-hero.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="about">
+            <div class="container h-100">
+                <h2>ABOUT US</h2>
+                <!-- about mobile -->
+                <div class="d-flex d-md-none " id="aboutMobile">
+                    <div>
+                        <img src="img/about-mobile.png" alt="">
+                        <p>We were born from a passion for <br>fresh fruit, vibrant colors, and a <br> healthy
+                            lifestyle. In our
+                            quality <br> to offer you a</p>
+                    </div>
+                    <div>
+                        <img src="img/uno-about.png" alt="">
+                        <p>smoothie bar, we carefully select <br> natural, seasonal ingredients to <br> create
+                            flavorful,
+                            well-balanced <br> and</p>
+                    </div>
+                    <div>
+                        <img src="img/due-about.png" alt="">
+                        <p>energy-packed combinations. <br> Every smoothie and every bowl is <br> prepared fresh to
+                            order, without <br>
+                            compromising on </p>
+                    </div>
+                    <div>
+                        <img src="img/tre-about.png" alt="">
+                        <p>refreshing, genuine, and feel- <br>good break. We believe that eating <br>healthy can be fun.
+                        </p>
+                    </div>
+                </div>
+                <!-- about desk -->
+                <div class="row align-items-center d-none d-md-flex">
+                    <div class="col-4">
+                        <img src="img/foto-about-uno.png" alt="">
+                    </div>
+                    <div class="col-8 d-flex flex-column align-items-center">
+                        <img src="img/tre-foto-about.png" alt="">
+                        <p>We were born from a passion for fresh fruit, vibrant colors, and a <br>healthy lifestyle. In
+                            our
+                            smoothie bar, we carefully select natural, <br> seasonal ingredients to create flavorful,
+                            well-balanced, and energy <br>-packed combinations. Every smoothie and every bowl is
+                            prepared
+                            fresh to <br>order, without compromising on quality, to offer you a refreshing, <br>genuine,
+                            and
+                            feel-good break. We believe that eating healthy can be fun.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- mission -->
+        <section id="mission">
+            <div class="container">
+                <h2>OUR MISSION</h2>
+                <div id="cardMission" class="d-flex flex-column">
+                    <img src="img/drink-mission.png" alt="">
+                    <div class="row" id="contenitoreQuadrati">
+                        <div class="col-md-4 text-center d-flex flex-column align-items-center" id="primoQuadrato">
+                            <img src="img/icona-uno.svg" alt="" width="48px" height="48px">
+                            <h5>QUALITY</h5>
+                            <p>We carefully select fresh fruit,<br> natural ingredients, and <br>thoughtfully balanced
+                                combinations <br>to craft smoothies and bowls that <br>are both delicious and
+                                nourishing. <br> Every
+                                recipe is prepared with <br> attention to detail.</p>
+                        </div>
+                        <div class="col-md-4 text-center d-flex flex-column align-items-center" id="secondoQuadrato">
+                            <img src="img/icona-due.svg" alt="" width="48px" height="48px">
+                            <h5>WELLNESS</h5>
+                            <p>Our mission is to make healthy living <br> easy and accessible for everyone. <br> From
+                                energizing
+                                smoothies to <br> satisfying, nutrient-rich bowls, our <br> menu is designed to fit
+                                seamlessly <br>
+                                into your day — whether it’s <br> breakfast, a light lunch, or a post- <br>workout
+                                boost.</p>
+                        </div>
+                        <div class="col-md-4 text-center d-flex flex-column align-items-center" id="terzoQuadrato">
+                            <img src="img/icona-tre.svg" alt="" width="48px" height="48px">
+                            <h5>SUSTANAIBILITY</h5>
+                            <p>We are committed to reducing waste, <br> supporting local suppliers, and <br> choosing
+                                eco-friendly
+                                packaging <br> whenever possible. Every decision we <br> make reflects our respect for
+                                the <br>
+                                environment and our dedication to <br> creating a more sustainable future.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- shop fruits -->
+        <section id="shop">
+            <div class="container">
+                <h2>SHOP <br>
+                    OUR FRUITS</h2>
+
+                <!-- pulsanti -->
+                <div class="d-flex justify-content-center">
+                    <div id="pulsanti" class="d-flex flex-row justify-content-between" role="tablist">
+
+                        <button id="smoothiesBtn" class="pul nav-link active" data-bs-toggle="tab"
+                            data-bs-target="#smoothies" type="button" role="tab" aria-controls="smoothies"
+                            aria-selected="true">
+                            SMOOTHIES
+                        </button>
+
+                        <button id="bowlsBtn" class="pul nav-link" data-bs-toggle="tab" data-bs-target="#bowls"
+                            type="button" role="tab" aria-controls="bowls" aria-selected="false">
+                            BOWLS
+                        </button>
+
+                    </div>
+                </div>
+
+                <div class="tab-content">
+
+                    <!-- SMOOTHIES -->
+                    <div id="smoothies" class="tab-pane fade show active" role="tabpanel"
+                        aria-labelledby="smoothiesBtn">
+
+                        <!-- prima riga smoothies desk-->
+                        <div class="row d-none d-md-flex flex-row justify-content-between" id="primaRiga">
+                            <div class="col-3">
+                                <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+                                    <img src="img/ciliegia.png" alt="">
+                                    <h4 class="text-center">CHERRY SHAKE</h4>
+                                    <p class="text-center"><span>INGREDIENTS:</span> CHERRIES, GREEK <br>YOGURT, ALMOND,
+                                        MILK,
+                                        ICE</p>
+                                </a>
+                            </div>
+
+                            <div class="col-3">
+                                <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+                                    <img src="img/uva.png" alt="">
+                                    <h4 class="text-center">PURPLE GRAPE SHAKE</h4>
+                                    <p class="text-center"><span>INGREDIENTS:</span> PURPLE GRAPES,<br>BLUEBERRIES,
+                                        YOGURT,
+                                        ICE
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="col-3">
+                                <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+                                    <img src="img/pera.png" alt="">
+                                    <h4 class="text-center">PEAR SHAKE</h4>
+                                    <p class="text-center"><span>INGREDIENTS:</span> PEAR, BANANA,<br>SPINACH, OAT MILK,
+                                        ICE
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- seconda riga smoothies desk-->
+                        <div class="row d-none d-md-flex flex-row justify-content-between">
+                            <div class="col-3">
+                                <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+                                    <img src="img/arancia.png" alt="">
+                                    <h4 class="text-center">ORANGE SHAKE</h4>
+                                    <p class="text-center"><span>INGREDIENTS:</span> ORANGE JUICE,<br>MANGO, GINGER, ICE
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="col-3">
+                                <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+                                    <img src="img/mela.png" alt="">
+                                    <h4 class="text-center">APPLE SHAKE</h4>
+                                    <p class="text-center"><span>INGREDIENTS:</span> APPLE, BANANA,<br>YOGURT, MILK, ICE
+                                    </p>
+                                </a>
+                            </div>
+
+                            <div class="col-3">
+                                <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+                                    <img src="img/banana.png" alt="">
+                                    <h4 class="text-center">BANANA SHAKE</h4>
+                                    <p class="text-center"><span>INGREDIENTS:</span> BANANA, PEANUT<br>BUTTER, ALMOND
+                                        MILK,
+                                        ICE
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- smoothies mobile -->
+                        <div id="smoothiesCarousel" class="carousel slide d-md-none">
+
+                            <!-- indicatori -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#smoothiesCarousel" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+
+                                <button type="button" data-bs-target="#smoothiesCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+
+                                <button type="button" data-bs-target="#smoothiesCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+
+                                <button type="button" data-bs-target="#smoothiesCarousel" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+
+                                <button type="button" data-bs-target="#smoothiesCarousel" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+
+                                <button type="button" data-bs-target="#smoothiesCarousel" data-bs-slide-to="5"
+                                    aria-label="Slide 6"></button>
+                            </div>
+
+                            <!-- prodotti -->
+                            <div class="carousel-inner">
+
+                                <!-- 1 -->
+                                <div class="carousel-item active">
+                                    <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+
+                                        <img src="img/ciliegia.png" alt="Cherry Shake">
+
+                                        <h4 class="text-center">
+                                            CHERRY SHAKE
+                                        </h4>
+
+                                        <p class="text-center">
+                                            <span>INGREDIENTS:</span>
+                                            CHERRIES, GREEK <br>YOGURT, ALMOND MILK, ICE
+                                        </p>
+
+                                    </a>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="carousel-item">
+                                    <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+
+                                        <img src="img/uva.png" alt="Purple Grape Shake">
+
+                                        <h4 class="text-center">
+                                            PURPLE GRAPE SHAKE
+                                        </h4>
+
+                                        <p class="text-center">
+                                            <span>INGREDIENTS:</span>
+                                            PURPLE GRAPES, <br> BLUEBERRIES, YOGURT, ICE
+                                        </p>
+
+                                    </a>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="carousel-item">
+                                    <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+
+                                        <img src="img/pera.png" alt="Pear Shake">
+
+                                        <h4 class="text-center">
+                                            PEAR SHAKE
+                                        </h4>
+
+                                        <p class="text-center">
+                                            <span>INGREDIENTS:</span>
+                                            PEAR, BANANA, <br> SPINACH, OAT MILK, ICE
+                                        </p>
+
+                                    </a>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="carousel-item">
+                                    <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+
+                                        <img src="img/arancia.png" alt="Orange Shake">
+
+                                        <h4 class="text-center">
+                                            ORANGE SHAKE
+                                        </h4>
+
+                                        <p class="text-center">
+                                            <span>INGREDIENTS:</span>
+                                            ORANGE JUICE, <br> MANGO, GINGER, ICE
+                                        </p>
+
+                                    </a>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="carousel-item">
+                                    <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+
+                                        <img src="img/mela.png" alt="Apple Shake">
+
+                                        <h4 class="text-center">
+                                            APPLE SHAKE
+                                        </h4>
+
+                                        <p class="text-center">
+                                            <span>INGREDIENTS:</span>
+                                            APPLE, BANANA, <br> YOGURT, MILK, ICE
+                                        </p>
+
+                                    </a>
+                                </div>
+
+                                <!-- 6 -->
+                                <div class="carousel-item">
+                                    <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+
+                                        <img src="img/banana.png" alt="Banana Shake">
+
+                                        <h4 class="text-center">
+                                            BANANA SHAKE
+                                        </h4>
+
+                                        <p class="text-center">
+                                            <span>INGREDIENTS:</span>
+                                            BANANA, PEANUT <br> BUTTER, ALMOND MILK, ICE
+                                        </p>
+
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <!-- freccia sinistra -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#smoothiesCarousel"
+                                data-bs-slide="prev">
+
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                                <span class="visually-hidden">
+                                    Previous
+                                </span>
+
+                            </button>
+
+                            <!-- freccia destra -->
+                            <button class="carousel-control-next" type="button" data-bs-target="#smoothiesCarousel"
+                                data-bs-slide="next">
+
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                                <span class="visually-hidden">
+                                    Next
+                                </span>
+
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- BOWLS -->
+                    <div id="bowls" class="tab-pane fade" role="tabpanel" aria-labelledby="bowlsBtn">
+
+                        <!-- prima riga bowls-->
+                        <div class="row d-none d-md-flex flex-row justify-content-between" id="primaRiga">
+                            <div class="col-3">
+                                <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+                                    <img src="img/bowls-apple.png" alt="">
+                                    <h4 class="text-center">APPLE CRUNCH BOWL</h4>
+                                    <p class="text-center"><span>INGREDIENTS:</span> BANANA, <br>APPLE, CHERRIES</p>
+                                </a>
+                            </div>
+
+                            <div class="col-3">
+                                <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+                                    <img src="img/energy-bowl.png" alt="">
+                                    <h4 class="text-center">ENERGY BOWL</h4>
+                                    <p class="text-center"><span>INGREDIENTS:</span> ORANGE,<br>CHERRIES, GRAPES</p>
+                                </a>
+                            </div>
+
+                            <div class="col-3">
+                                <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+                                    <img src="img/banana-bowl.png" alt="">
+                                    <h4 class="text-center">BANANA BLISS BOWL</h4>
+                                    <p class="text-center"><span>INGREDIENTS:</span> PEAR,<br>ORANGE, BANANA</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- seconda riga bowls-->
+                        <div class="row d-none d-md-flex flex-row justify-content-between">
+                            <div class="col-3">
+                                <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+                                    <img src="img/pear-bowl.png" alt="">
+                                    <h4 class="text-center">PEAR PARADISE BOWL</h4>
+                                    <p class="text-center"><span>INGREDIENTS:</span> APPLE,<br>PEAR, GRAPES</p>
+                                </a>
+                            </div>
+
+                            <div class="col-3">
+                                <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+                                    <img src="img/orange-bowl.png" alt="">
+                                    <h4 class="text-center">ORANGE SUNRISE</h4>
+                                    <p class="text-center"><span>INGREDIENTS:</span> ORANGE,<br>CHERRIES, APPLE</p>
+                                </a>
+                            </div>
+                            <div class="col-3"></div>
+                        </div>
+
+
+                            <!-- BOWLS MOBILE -->
+                            <div id="bowlsCarousel" class="carousel slide d-md-none">
+
+                                <!-- indicatori -->
+                                <div class="carousel-indicators">
+
+                                    <button type="button" data-bs-target="#bowlsCarousel" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Slide 1">
+                                    </button>
+
+                                    <button type="button" data-bs-target="#bowlsCarousel" data-bs-slide-to="1"
+                                        aria-label="Slide 2">
+                                    </button>
+
+                                    <button type="button" data-bs-target="#bowlsCarousel" data-bs-slide-to="2"
+                                        aria-label="Slide 3">
+                                    </button>
+
+                                    <button type="button" data-bs-target="#bowlsCarousel" data-bs-slide-to="3"
+                                        aria-label="Slide 4">
+                                    </button>
+
+                                    <button type="button" data-bs-target="#bowlsCarousel" data-bs-slide-to="4"
+                                        aria-label="Slide 5">
+                                    </button>
+
+                                </div>
+
+
+                                <!-- prodotti -->
+                                <div class="carousel-inner">
+
+                                    <!-- 1 -->
+                                    <div class="carousel-item active">
+
+                                        <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+
+                                            <img src="img/bowls-apple.png" alt="Apple Crunch Bowl">
+
+                                            <h4 class="text-center">
+                                                APPLE CRUNCH BOWL
+                                            </h4>
+
+                                            <p class="text-center">
+                                                <span>INGREDIENTS:</span>
+                                                BANANA, <br>APPLE, CHERRIES
+                                            </p>
+
+                                        </a>
+
+                                    </div>
+
+
+                                    <!-- 2 -->
+                                    <div class="carousel-item">
+
+                                        <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+
+                                            <img src="img/energy-bowl.png" alt="Energy Bowl">
+
+                                            <h4 class="text-center">
+                                                ENERGY BOWL
+                                            </h4>
+
+                                            <p class="text-center">
+                                                <span>INGREDIENTS:</span>
+                                                ORANGE, <br>CHERRIES, GRAPES
+                                            </p>
+
+                                        </a>
+
+                                    </div>
+
+
+                                    <!-- 3 -->
+                                    <div class="carousel-item">
+
+                                        <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+
+                                            <img src="img/banana-bowl.png" alt="Banana Bliss Bowl">
+
+                                            <h4 class="text-center">
+                                                BANANA BLISS BOWL
+                                            </h4>
+
+                                            <p class="text-center">
+                                                <span>INGREDIENTS:</span>
+                                                PEAR, <br>ORANGE, BANANA
+                                            </p>
+
+                                        </a>
+
+                                    </div>
+
+
+                                    <!-- 4 -->
+                                    <div class="carousel-item">
+
+                                        <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+
+                                            <img src="img/pear-bowl.png" alt="Pear Paradise Bowl">
+
+                                            <h4 class="text-center">
+                                                PEAR PARADISE BOWL
+                                            </h4>
+
+                                            <p class="text-center">
+                                                <span>INGREDIENTS:</span>
+                                                APPLE, <br>PEAR, GRAPES
+                                            </p>
+
+                                        </a>
+
+                                    </div>
+
+
+                                    <!-- 5 -->
+                                    <div class="carousel-item">
+
+                                        <a href="#" class="cardSmoothie d-flex flex-column align-items-center">
+
+                                            <img src="img/orange-bowl.png" alt="Orange Sunrise">
+
+                                            <h4 class="text-center">
+                                                ORANGE SUNRISE
+                                            </h4>
+
+                                            <p class="text-center">
+                                                <span>INGREDIENTS:</span>
+                                                ORANGE, <br>CHERRIES, APPLE
+                                            </p>
+
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- freccia sinistra -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#bowlsCarousel"
+                                    data-bs-slide="prev">
+
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                                    <span class="visually-hidden">
+                                        Previous
+                                    </span>
+
+                                </button>
+
+
+                                <!-- freccia destra -->
+                                <button class="carousel-control-next" type="button" data-bs-target="#bowlsCarousel"
+                                    data-bs-slide="next">
+
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                                    <span class="visually-hidden">
+                                        Next
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- mappa -->
+        <section id="mappa">
+            <div class="container">
+                <h2>CAN'T WAIT <br>
+                    TO SEE YOU</h2>
+                <div id="contMappa" class="d-flex align-items-center justify-content-center">
+                    <img src="img/mappa.png" alt="" class="w-100">
+                    <!-- info desktop -->
+                    <div id="info" class="d-none d-md-flex flex-row">
+                        <img src="img/logo.svg" alt="">
+                        <div class="infoTesti">
+                            <ul class="list-unstyled">
+                                <li><strong>NAPOLI (NA)</strong></li>
+                                <li><strong>ADDRESS:</strong> VIA COSTANTINOPOLI, 6</li>
+                                <li><strong>PHONE:</strong> +39 3895250152</li>
+                                <li><strong>WE'RE OPEN:</strong> MON-FRI 11:30-14:30 / 17:00-20:00 <br>SAT - SUN 11:30 -
+                                    22:00 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- info mobile -->
+                <div class="d-md-none " id="infoMobile">
+                    <ul class="list-unstyled">
+                        <li><strong>NAPOLI (NA)</strong></li>
+                        <li><strong>ADDRESS:</strong> VIA COSTANTINOPOLI, 6</li>
+                        <li><strong>PHONE:</strong> +39 3895250152</li>
+                        <li><strong>WE'RE OPEN:</strong> MON-FRI 11:30-14:30 / 17:00-20:00 <br>SAT - SUN 11:30 -
+                            22:00 </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- join in the team -->
+        <section id="join">
+            <div class="container">
+                <div class="d-md-flex flex-row justify-content-md-between align-items-start align-items-md-center"
+                    id="contContainer">
+                    <h2>JOIN <br>
+                        THE TEAM</h2>
+                    <button id="contact">CONTACT US</button>
+                </div>
+                <div id="contFoto" class="d-flex align-items-center justify-content-center">
+                    <img src="img/foto-team.png" alt="" class="w-100 d-none d-md-block">
+                    <img src="img/foto-team-mobile.png" alt="" class="w-100 d-md-none">
+                </div>
+            </div>
+        </section>
+
+        <!-- stay in touch -->
+        <section id="touch">
+            <div class="container">
+                <div class="row">
+                    <div class="w-mobile-100 w-md-50">
+                        <h2>STAY IN <br>
+                            TOUCH</h2>
+                        <!-- foto mobile -->
+                        <div class="d-md-none"><img src="img/foto-touch-mobile.png" alt=""></div>
+                        <p>STAY IN TOUCH WITH US AND BE PART OF OUR COMMUNITY. WE SHARE UPDATES, NEW <br
+                                class="d-none d-md-block">
+                            IDEAS, AND ISPIRATION TO KEEP YOU CONNECTED WITH OUR JOURNEY. FOLLOW <br
+                                class="d-none d-md-block">
+                            ALONG TO DISCOVER NEWS, STORIES, AND EVERYTHING WE'RE WORKING ON</p>
+                        <form action="" class="d-md-flex flex-md-row gap-md-2">
+                            <input type="email" placeholder="YOUR EMAIL ADDRESS" required id="email">
+                            <button type="submit" id="sub">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                    <!-- foto desktop -->
+                    <div class="d-none d-md-block w-50">
+                        <img src="img/foto-touch.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-column flex-md-row">
+                <div class="d-flex flex-column flex-md-row align-items-md-center">
+                    <img src="img/logo-bianco.png" alt="">
+                    <p>WE WERE BORN FROM A PASSION FOR FRESH FRUIT, VIBRANT COLORS, AND A HEALTHY LIFESTYLE <br
+                            class="d-none d-md-block">
+                        IN OUR SMOOTHIE BAR, WE CAREFULLY SELECT NATURAL, SEASONAL INGREDIENTS TO CREATE <br
+                            class="d-none d-md-block">
+                        FLAVORFUL, WELL-BALANCED, AND ENERGY-PACKED COMBINATIONS. EVERY SMOOTHIE AND <br
+                            class="d-none d-md-block">
+                        EVERY BOWL IS PREPARED FRESH TO</p>
+                </div>
+                <div id="icone" class="d-flex align-items-center">
+                    <a href="#"><i class="bi bi-behance"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

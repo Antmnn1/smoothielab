@@ -1,0 +1,707 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+:root {
+    --fucsia: #F7529F;
+    --beije: #FFEBE2;
+    --viola: #7E7EFF;
+    --yellow: #FCD800;
+}
+
+body {
+    background-color: var(--beije);
+    font-family: "degular-text", sans-serif;
+}
+
+.container {
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "degular-display", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 130px;
+    line-height: 75%;
+    letter-spacing: -1%;
+    font-weight: bold;
+    color: var(--fucsia);
+}
+
+h2 {
+    font-size: 122px;
+    letter-spacing: -1%;
+    font-weight: bold;
+}
+
+#about h2,
+#mission h2,
+#mappa h2,
+#join h2 {
+    color: var(--yellow);
+}
+
+#shop h2,
+#touch h2 {
+    color: var(--fucsia);
+    line-height: 75%;
+}
+
+#mappa h2,
+#join h2 {
+    line-height: 75%;
+}
+
+#shop h4 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px 0 4px 0;
+}
+
+span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#mission h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section {
+    overflow: hidden;
+}
+
+/* header */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--fucsia);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#navLeft {
+    gap: 100px;
+}
+
+#navRight {
+    gap: 100px;
+}
+
+#navigation {
+    border: 2px solid #000000;
+    border-radius: 52px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* hero */
+
+.foto-hero img {
+    width: 600px;
+    height: 550px;
+}
+
+.titoli p {
+    color: var(--fucsia);
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -1%;
+    font-weight: 600;
+    padding-top: 16px;
+}
+
+#animazione p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 100%;
+    color: var(--fucsia);
+}
+
+#animazione img {
+    width: 25px;
+    height: 30px;
+}
+
+.hero {
+    position: relative;
+}
+
+#animazione {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#contenitoreHero {
+    padding-top: 180px;
+}
+
+#animazione img {
+    animation: bounceFreccia 1.2s ease-in-out infinite;
+}
+
+@keyframes bounceFreccia {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(16px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* about */
+
+section:not(.hero) {
+    padding: 96px 0;
+}
+
+#about {
+    background-color: var(--viola);
+}
+
+#about img {
+    margin-top: -48px;
+}
+
+#about p {
+    text-transform: uppercase;
+    margin-top: 32px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    color: var(--beije);
+}
+
+/* mission */
+#mission {
+    background-color: var(--fucsia);
+}
+
+#cardMission {
+    background-color: white;
+    border: 2px solid #000000;
+    padding: 16px 16px 0 16px;
+}
+
+div#cardMission {
+    margin-top: -50px;
+    position: relative;
+}
+
+img[src="img/drink-mission.png"] {
+    border: 2px solid #000000;
+}
+
+#mission p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: -1%;
+    text-align: center;
+}
+
+#mission img[src$=".svg"] {
+    margin: 24px 0 16px 0;
+}
+
+#mission p {
+    padding-top: 8px;
+    text-transform: uppercase;
+}
+
+#secondoQuadrato {
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+}
+
+#primoQuadrato,
+#secondoQuadrato,
+#terzoQuadrato {
+    padding-bottom: 16px;
+}
+
+/* shop fruits */
+
+#shop a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#shop p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.cardSmoothie {
+    transition: all 0.3s ease;
+}
+
+.cardSmoothie:hover {
+    transform: scale(1.1);
+}
+
+
+#pulsanti {
+    border: 2px solid #000000;
+    padding: 8px;
+    width: 352px;
+    height: 72px;
+    border-radius: 52px;
+    margin-top: 64px;
+}
+
+.pulActive {
+    padding: 24px 34px;
+    color: var(--beije);
+    background-color: var(--fucsia);
+    border: 2px solid #000000;
+    border-radius: 52px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pul {
+    padding: 24px 34px;
+    color: var(--fucsia);
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button.pul.active {
+    padding: 24px 34px;
+    color: var(--beije);
+    background-color: var(--fucsia);
+    border: 2px solid #000000;
+    border-radius: 52px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#primaRiga {
+    margin: 128px 0;
+}
+
+/* mappa */
+#mappa {
+    background-color: var(--viola);
+}
+
+#contMappa {
+    padding: 16px;
+    border: 2px solid #000000;
+    background-color: white;
+    position: relative;
+}
+
+div#contMappa {
+    margin-top: -20px;
+}
+
+#contMappa img[src="img/mappa.png"] {
+    border: 2px solid #000000;
+}
+
+#info {
+    background-color: var(--yellow);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    border: 2px solid #000000;
+    padding: 24px;
+    gap: 16px;
+}
+
+/* join in the team */
+#contFoto {
+    padding: 16px;
+    border: 2px solid #000000;
+    background-color: white;
+}
+
+#join {
+    background-color: var(--fucsia);
+}
+
+#contact {
+    border: 2px solid #000000;
+    background-color: var(--beije);
+    color: var(--fucsia);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 52px;
+    padding: 12px 24px;
+}
+
+#contact:hover {
+    background-color: transparent;
+    color: var(--beije);
+}
+
+#contFoto img {
+    border: 2px solid #000000;
+}
+
+div#contFoto {
+    margin-top: -20px;
+    position: relative;
+}
+
+/* touch */
+.w-md-50 {
+    width: 50% !important;
+}
+
+#touch {
+    background-color: var(--yellow);
+}
+
+#touch p {
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -1%;
+    font-weight: 600;
+    padding: 40px 0;
+}
+
+input[type="email"] {
+    width: 350px;
+}
+
+#email {
+    border: 2px solid #000000;
+    background-color: var(--beije);
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 52px;
+    padding: 12px 24px;
+}
+
+#sub {
+    border: 2px solid #000000;
+    background-color: var(--beije);
+    color: var(--fucsia);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 52px;
+    padding: 12px 24px;
+}
+
+#sub:hover {
+    background-color: var(--fucsia);
+    color: var(--beije);
+}
+
+/* footer */
+footer {
+    background-color: var(--viola);
+    padding: 96px;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: -1%;
+    color: var(--beije);
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+footer a {
+    border-radius: 100%;
+    background-color: var(--beije);
+    border: 2px solid #000000;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    color: var(--fucsia);
+}
+
+#icone {
+    gap: 16px;
+}
+
+footer a i {
+    font-size: 24px;
+}
+
+footer a:hover {
+    background-color: var(--fucsia);
+    color: var(--beije);
+}
+
+@media (max-width: 1399.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    section:not(.hero) {
+        padding: 48px 15px;
+    }
+
+    header {
+        padding: 0 10px;
+    }
+
+    #fakeDiv {
+        width: 36px;
+    }
+
+    #animazione p {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 68px;
+        line-height: 100%;
+    }
+
+    .foto-hero img {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        right: -40%;
+        ;
+    }
+
+    #contenitoreHero {
+        flex-direction: column;
+    }
+
+    #contenitoreHero .titoli {
+        width: 303px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #navigation {
+        border: none;
+        padding: 0;
+    }
+
+    /* about */
+    #about {
+        padding-right: 0;
+    }
+
+    #about img {
+        width: 286px;
+        height: 286px;
+        margin-top: 0;
+    }
+
+    #about p {
+        margin-top: 16px;
+    }
+
+    #aboutMobile {
+        gap: 20px;
+        overflow-x: auto;
+        margin-top: -16px;
+    }
+
+    /* mission */
+    #cardMission img[src="img/drink-mission.png"] {
+        width: 100%;
+        height: 332px;
+        object-fit: cover;
+    }
+
+    #secondoQuadrato {
+        border: none;
+    }
+
+    div#cardMission {
+        margin-top: -24px;
+    }
+
+    #primoQuadrato {
+        padding-top: 64px;
+    }
+
+    #primoQuadrato,
+    #secondoQuadrato,
+    #terzoQuadrato {
+        padding-bottom: 64px;
+    }
+
+    /* sezione shop */
+    #smoothies.active, #bowls.active {
+        padding: 100px 0
+    }
+
+    .cardSmoothie:hover {
+        transform: none;
+    }
+
+    .carousel-control-next-icon {
+        width: 48px;
+        height: 48px;
+        background-image: url("../img/freccia-next.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .carousel-control-prev-icon {
+        width: 48px;
+        height: 48px;
+        background-image: url("../img/freccia-prev.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /* sezione mappa */
+    #contMappa img[src="img/mappa.png"] {
+        object-fit: cover;
+        height: 324px;
+    }
+
+    #infoMobile {
+        background-color: var(--yellow);
+        padding: 16px 24px;
+        font-size: 14px;
+    }
+
+    div#contMappa {
+        margin-top: -8px;
+    }
+
+    /* join the team */
+    #contact {
+        font-size: 16px;
+        border-radius: 34px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #contContainer {
+        position: relative;
+    }
+
+    #contFoto img {
+        border: none;
+    }
+
+    div#contFoto {
+        margin-top: -8px;
+    }
+
+    /* stay in touch */
+    .w-mobile-100 {
+        width: 100% !important;
+    }
+
+    #touch p {
+        padding: 16px 0;
+    }
+
+    #sub {
+        font-size: 16px;
+        padding: 16px 24px;
+        border-radius: 34px;
+        margin-top: 16px;
+    }
+
+    #email {
+        width: 286px;
+        font-size: 16px;
+        padding: 16px 24px;
+    }
+
+    img[src="img/foto-touch-mobile.png"] {
+        margin-top: -8px;
+    }
+
+    /* footer */
+    footer {
+        padding: 48px 15px;
+    }
+
+    footer p {
+        margin-left: 0;
+        margin: 32px 0;
+    }
+
+    img[src="img/logo-bianco.png"] {
+        width: 130px;
+        height: 107px;
+    }
+}
