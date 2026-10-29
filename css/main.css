@@ -409,10 +409,6 @@ div#contFoto {
 }
 
 /* touch */
-.w-md-50 {
-    width: 50% !important;
-}
-
 #touch {
     background-color: var(--yellow);
 }
@@ -496,62 +492,119 @@ footer a:hover {
 
 @media (max-width: 1399.98px) {}
 
-@media (max-width: 1199.98px) {}
+.titoli p {
+    line-height: 130%;
+}
 
-@media (max-width: 991.98px) {}
+#navLeft,
+#navRight {
+    gap: 80px;
+}
 
-@media (max-width: 767.98px) {}
+#about .col-4 img {
+    width: 360px;
+}
 
-@media (max-width: 575.98px) {
+#about .col-8 img {
+    width: 700px;
+}
+
+#touch img {
+    width: 100%;
+}
+
+@media (max-width: 1199.98px) {
+
+    #navLeft,
+    #navRight {
+        gap: 40px;
+    }
+
+    #about .col-4 {
+        width: 40%;
+        padding: 0;
+    }
+
+    #about .col-8 {
+        width: 60%;
+        padding: 0;
+    }
+
+    #about .col-8 br {
+        display: none;
+    }
+
+    #about .col-8 img {
+        width: 100%;
+    }
+
+    footer {
+        padding: 40px 20px;
+    }
+
+    footer .container>div {
+        gap: 40px;
+    }
+
+    footer .container>div>div:nth-of-type(1) {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 991.98px) {
     section:not(.hero) {
-        padding: 48px 15px;
+        padding: 72px 15px;
     }
 
     header {
-        padding: 0 10px;
+        padding: 0 24px;
     }
 
     #fakeDiv {
         width: 36px;
     }
 
-    #animazione p {
-        font-size: 20px;
+    #navigation {
+        border: none;
+        padding: 0;
+    }
+
+    #navigation>div:nth-child(5) img {
+        width: 40px;
     }
 
     h1 {
-        font-size: 80px;
+        font-size: 110px;
     }
 
     h2 {
-        font-size: 68px;
+        font-size: 96px;
         line-height: 100%;
     }
 
-    .foto-hero img {
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        right: -40%;
-        ;
-    }
-
+    /* hero */
     #contenitoreHero {
         flex-direction: column;
     }
 
     #contenitoreHero .titoli {
-        width: 303px;
+        width: 420px;
         position: absolute;
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
-    #navigation {
-        border: none;
-        padding: 0;
+    .foto-hero img {
+        width: min(100%, 60vh);
+        height: auto;
+        position: absolute;
+        top: 50%;
+        right: -20%;
+    }
+
+    #animazione p {
+        font-size: 20px;
     }
 
     /* about */
@@ -560,17 +613,18 @@ footer a:hover {
     }
 
     #about img {
-        width: 286px;
-        height: 286px;
+        width: 360px;
+        height: 360px;
         margin-top: 0;
     }
 
     #about p {
-        margin-top: 16px;
+        margin-top: 20px;
+        font-size: 20px;
     }
 
     #aboutMobile {
-        gap: 20px;
+        gap: 28px;
         overflow-x: auto;
         margin-top: -16px;
     }
@@ -578,7 +632,7 @@ footer a:hover {
     /* mission */
     #cardMission img[src="img/drink-mission.png"] {
         width: 100%;
-        height: 332px;
+        height: 420px;
         object-fit: cover;
     }
 
@@ -601,12 +655,19 @@ footer a:hover {
     }
 
     /* sezione shop */
-    #smoothies.active, #bowls.active {
-        padding: 100px 0
+    #smoothies.active,
+    #bowls.active {
+        padding: 100px 0;
     }
 
     .cardSmoothie:hover {
         transform: none;
+    }
+
+    .carousel-item img {
+        width: 30%;
+        max-width: 400px;
+        height: auto;
     }
 
     .carousel-control-next-icon {
@@ -630,13 +691,13 @@ footer a:hover {
     /* sezione mappa */
     #contMappa img[src="img/mappa.png"] {
         object-fit: cover;
-        height: 324px;
+        height: 450px;
     }
 
     #infoMobile {
         background-color: var(--yellow);
-        padding: 16px 24px;
-        font-size: 14px;
+        padding: 24px 32px;
+        font-size: 18px;
     }
 
     div#contMappa {
@@ -645,8 +706,6 @@ footer a:hover {
 
     /* join the team */
     #contact {
-        font-size: 16px;
-        border-radius: 34px;
         position: absolute;
         top: 0;
         right: 0;
@@ -665,25 +724,22 @@ footer a:hover {
     }
 
     /* stay in touch */
-    .w-mobile-100 {
-        width: 100% !important;
-    }
-
     #touch p {
-        padding: 16px 0;
-    }
-
-    #sub {
-        font-size: 16px;
-        padding: 16px 24px;
-        border-radius: 34px;
-        margin-top: 16px;
+        padding: 24px 0;
     }
 
     #email {
-        width: 286px;
-        font-size: 16px;
-        padding: 16px 24px;
+        width: 400px;
+        max-width: 100%;
+        font-size: 18px;
+        padding: 16px 28px;
+    }
+
+    #sub {
+        display: block;
+        font-size: 18px;
+        padding: 16px 28px;
+        margin-top: 16px;
     }
 
     img[src="img/foto-touch-mobile.png"] {
@@ -692,11 +748,208 @@ footer a:hover {
 
     /* footer */
     footer {
+        padding: 64px 40px;
+    }
+
+    footer p {
+        margin: 40px 0;
+    }
+
+    img[src="img/logo-bianco.png"] {
+        width: 160px;
+        height: 132px;
+    }
+
+    footer .container>div:first-of-type>div:first-of-type,footer .container>div:first-of-type{
+        gap: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    section:not(.hero) {
+        padding: 60px 15px;
+    }
+
+    header {
+        padding: 0 16px;
+    }
+
+    h1 {
+        font-size: 95px;
+    }
+
+    h2 {
+        font-size: 80px;
+    }
+
+    /* hero */
+    #contenitoreHero .titoli {
+        width: 360px;
+    }
+
+    .foto-hero img {
+        right: -30%;
+    }
+
+    /* about */
+    #about img {
+        width: 322px;
+        height: 322px;
+    }
+
+    #about p {
+        margin-top: 18px;
+        font-size: 18px;
+    }
+
+    #aboutMobile {
+        gap: 24px;
+    }
+
+    /* mission */
+    #cardMission img[src="img/drink-mission.png"] {
+        height: 380px;
+    }
+
+    /* shop */
+    .carousel-item img {
+        width: 45%;
+        max-width: 350px;
+    }
+
+    /* mappa */
+    #contMappa img[src="img/mappa.png"] {
+        height: 390px;
+    }
+
+    #infoMobile {
+        padding: 20px 28px;
+        font-size: 16px;
+    }
+
+    /* touch */
+    #touch p {
+        padding: 20px 0;
+    }
+
+    #email {
+        width: 340px;
+        font-size: 17px;
+        padding: 16px 26px;
+    }
+
+    #sub {
+        font-size: 17px;
+        padding: 16px 26px;
+    }
+
+    /* footer */
+    footer {
+        padding: 56px 30px;
+    }
+
+    footer p {
+        margin: 36px 0;
+    }
+
+    img[src="img/logo-bianco.png"] {
+        width: 145px;
+        height: 119px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    section:not(.hero) {
+        padding: 48px 15px;
+    }
+
+    header {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 68px;
+    }
+
+    /* hero */
+    #contenitoreHero .titoli {
+        width: 303px;
+    }
+
+    .foto-hero img {
+        width: 100%;
+        right: -40%;
+    }
+
+    /* about */
+    #about img {
+        width: 286px;
+        height: 286px;
+    }
+
+    #about p {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    #aboutMobile {
+        gap: 20px;
+    }
+
+    /* mission */
+    #cardMission img[src="img/drink-mission.png"] {
+        height: 332px;
+    }
+
+    /* shop */
+    .carousel-item img {
+        width: auto;
+        max-width: 100%;
+    }
+
+    /* mappa */
+    #contMappa img[src="img/mappa.png"] {
+        height: 324px;
+    }
+
+    #infoMobile {
+        padding: 16px 24px;
+        font-size: 14px;
+    }
+
+    /* join the team */
+    #contact {
+        font-size: 16px;
+        border-radius: 34px;
+    }
+
+    /* touch */
+    #touch p {
+        padding: 16px 0;
+    }
+
+    #email {
+        width: 286px;
+        font-size: 16px;
+        padding: 16px 24px;
+    }
+
+    #sub {
+        font-size: 16px;
+        padding: 16px 24px;
+        border-radius: 34px;
+    }
+
+    /* footer */
+    footer {
         padding: 48px 15px;
     }
 
     footer p {
-        margin-left: 0;
         margin: 32px 0;
     }
 
