@@ -347,6 +347,10 @@ button.pul.active {
     background-color: var(--viola);
 }
 
+.contLogo {
+    border: 2px solid black;
+}
+
 #contMappa {
     padding: 16px;
     border: 2px solid #000000;
@@ -511,6 +515,7 @@ footer a:hover {
 
 #touch img {
     width: 100%;
+
 }
 
 @media (max-width: 1199.98px) {
@@ -549,6 +554,17 @@ footer a:hover {
     footer .container>div>div:nth-of-type(1) {
         gap: 40px;
     }
+
+    #primoQuadrato,
+    #secondoQuadrato,
+    #terzoQuadrato {
+        padding: 20px;
+    }
+
+    #mission img[src$=".svg"] {
+        margin: 0;
+        margin-bottom: 16px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -585,31 +601,44 @@ footer a:hover {
     /* hero */
     #contenitoreHero {
         flex-direction: column;
+        height: 100%;
+    }
+
+    .hero{
+        position: relative;
     }
 
     #contenitoreHero .titoli {
         width: 420px;
         position: absolute;
-        top: 40%;
-        left: 50%;
+        top: 50%;
+        left: 30%;
         transform: translate(-50%, -50%);
     }
 
     .foto-hero img {
-        width: min(100%, 60vh);
+        width: min(100%, 55vh);
         height: auto;
         position: absolute;
         top: 50%;
-        right: -20%;
+        right: -10%;
     }
 
     #animazione p {
         font-size: 20px;
     }
 
+    h1 br{
+        display: none;
+    }
+
     /* about */
     #about {
         padding-right: 0;
+    }
+
+    #about .container{
+        max-width: 100%;
     }
 
     #about img {
@@ -760,7 +789,8 @@ footer a:hover {
         height: 132px;
     }
 
-    footer .container>div:first-of-type>div:first-of-type,footer .container>div:first-of-type{
+    footer .container>div:first-of-type>div:first-of-type,
+    footer .container>div:first-of-type {
         gap: 0;
     }
 }
@@ -876,13 +906,19 @@ footer a:hover {
     }
 
     /* hero */
+
+    .hero{
+        position: relative;
+    }
+
     #contenitoreHero .titoli {
         width: 303px;
+        left: 45%;
     }
 
     .foto-hero img {
-        width: 100%;
-        right: -40%;
+        width: 70%;
+        right: -15%;
     }
 
     /* about */
